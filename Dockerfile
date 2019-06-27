@@ -5,6 +5,8 @@ FROM $BASE_CONTAINER
 
 LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
+RUN pip install --upgrade bs4
+
 # Install Tensorflow
 RUN conda install --quiet --yes \
     'tensorflow=1.13*' \
