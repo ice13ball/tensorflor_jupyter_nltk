@@ -6,6 +6,9 @@ FROM $BASE_CONTAINER
 LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
 RUN pip install --upgrade bs4
+RUN pip3 install ipython
+RUN pip install ipython
+RUN pip install lxml
 
 # Install Tensorflow
 RUN conda install --quiet --yes \
